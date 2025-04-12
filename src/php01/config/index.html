@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="result.php" method="post">
+        <label>お名前：<input type="text" name="name"></label>
+        <br />
+        <label>ご希望商品：</label>
+        <div>
+            <input type="radio" id="itemChoice1" name="item" value="Aset" />
+            <label for="itemChoice1">Ａセット</label>
+
+            <input type="radio" id="itemChoice2" name="item" value="Bset" />
+            <label for="itemChoice2">Ｂセット</label>
+
+            <input type="radio" id="itemChoice3" name="item" value="Cset" />
+            <label for="itemChoice3">Ｃセット</label>
+        </div>
+        <label for="itemQuantity">注文数：</label>
+        <input type="number" id="itemQuantity" name="itemQuantity" min="-1" max="10" />
+        <br />
+        <input type="submit" name="submit" value="送信する" />
+    </form>
+</body>
+</html>
